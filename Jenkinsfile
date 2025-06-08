@@ -6,7 +6,7 @@ pipeline {
     stages { 
         stage('Checkout') {  
             steps { 
-                git branch: 'main', url: ''  
+                git branch: 'main', url: 'https://github.com/Darshantalawar/ok.git'  
             } 
     } 
      stage('Build') {  
@@ -21,7 +21,7 @@ pipeline {
       } 
      stage('Run Application') {  
             steps { 
-                bat 'java -jar target/ok-0.0.1-SNAPSHOT.jar'  
+                bat 'java -jar target/a-0.0.1-SNAPSHOT.jar'  
             } 
       } 
     } 
